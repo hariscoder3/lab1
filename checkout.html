@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1 class="head">
+                SignUp Form
+            </h1>
+        </div>
+
+        <fieldset>
+        <legend>Billing Details</legend>    
+        <form >
+        <div class="form-body">
+            <div class="input-form">
+                <label>First Name:</label>
+                <br>
+                <input type="text" name="firstname" placeholder="Enter your First name">
+            </div>
+            
+            <div class="input-form">
+                <label>Last Name:</label>
+                <br>
+                <input type="text" name="lastname" placeholder="Enter your Last name">
+            </div>
+
+            <div class="input-form">
+                <label>Company Name:</label>
+                <br>
+                <input type="text" name="companyname">
+            </div>
+
+            <div class="input-form">
+                <label>Province</label>
+                <br>
+                <select name="selection" id="select-province">
+                    <option value="punjab">Punjab</option>
+                    <option value="sindh">Sindh</option>
+                    <option value="kpk">KPK</option>
+                    <option value="balochistan">Balochistan</option>
+                    <option value="azadkashmir">Azad kashmir</option>
+                </select>
+            </div>
+
+            <div class="input-form">
+                <label>Address:</label>
+                <br>
+                <input type="text" name="address" placeholder="Street Address">
+            </div>
+            
+            <div class="input-form">
+                <label>Town/City</label>
+                <br>
+                <input type="text" name="city" placeholder="Enter Your town/city">
+            </div>
+            
+            <div class="input-form">
+                <label>Postal Code</label>
+                <br>
+                <input type="number" name="code" placeholder="e.g 5670">
+            </div>
+            
+            <div class="input-form">
+                <label>Phone</label>
+                <br>
+                <input type="text" name="phone" placeholder="Enter your phone number">
+            </div>
+
+            <div class="input-form">
+                <label>Email</label>
+                <br>
+                <input type="text" name="email" placeholder="e.g abc@outlook.com">
+            </div>
+            
+            <div class="input-form">
+                <label>Additional Information<br>Order Info</label>
+                <br>
+                <input type="text" name="info" placeholder="e.g special Notes for delivery">
+            </div>
+            
+            <div class="payment-info">
+                <input type="radio" name="radio">
+                <label>Cash on Delivery</label>
+                <br>
+                <input type="radio" name="radio">
+                <label>Credit Card(Stripe)</label>
+            </div>
+            
+            <div class="order-btn">
+                <button>Sign Up</button>
+            </div>
+            
+        </div>
+    </form>    
+    </fieldset>
+    </div>
+    
+</body>
+</html>

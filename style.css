@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 140vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(pic.jpg);
+}
+
+.container {
+
+    background-color: #fff;
+    max-width: 600px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.container .header {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container form .form-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .form-body .input-form {
+    margin: 20px 0px 20px 0px;
+    width: 40%;
+
+}
+
+form .form-body .input-form input {
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+form .order-btn button {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 4px;
+}
+
+form .order-btn button:hover {
+    color: black;
+    background-color: #fff;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+/* For Responsiveness  */
+
+@media(max-width: 650px) {
+    
+    body {
+        height: 170vh;
+    }
+    .container {
+        max-width: 400px;
+        width: 100%;
+        padding: 30px;
+        margin: 10px 10px 10px 10px;
+    }
+
+    form .form-body .input-form {
+        width: 100%;
+    }
+
+    .container form .form-body {
+        max-width: 600px;
+        display: block;
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+}
